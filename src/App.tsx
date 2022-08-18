@@ -51,7 +51,7 @@ function App() {
     setInputCity(e.target.value)
   }, [inputCity])
 
-  const get: any = window.localStorage.getItem('data')
+  const get: any = localStorage.getItem('data')
     useEffect(()=>{
       if (window.localStorage.getItem('data') !== null) {
         setData(JSON.parse(get));
